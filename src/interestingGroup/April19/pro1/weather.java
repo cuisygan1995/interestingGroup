@@ -38,6 +38,8 @@ public class weather {
             if((high>=Float.valueOf(temrange[0])&&(high<Float.valueOf(temrange[1])))){
                 clothes.add(String.valueOf(map.get(i)));
             }
+            if((lowest<Float.valueOf(temrange[0])&&(high>=Float.valueOf(temrange[1])))){
+                clothes.add(String.valueOf(map.get(i)));
         }
         return clothes;
     }
