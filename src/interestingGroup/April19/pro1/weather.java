@@ -7,6 +7,8 @@ import java.util.*;
 public class weather {
 
     public boolean input(String temper){
+        //判断输入的温度是否合法
+
         if(!temper.matches("^[0-9]+(\\.\\d{0,1})?")){ //[1-9]+((\.{0,1}[0,9]{0,1}))?
             System.out.println("请输入整数或者小数点后一位 ");
             return false;
